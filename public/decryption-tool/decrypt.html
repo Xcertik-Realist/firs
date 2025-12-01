@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Scandinavian Firs – Order Decryptor</title>
+  <style>
+    body { font-family: system-ui; max-width: 800px; margin: 40px auto; padding: 20px; background: #0f172a; color: white; }
+    textarea, input { width: 100%; padding: 12px; margin: 10px 0; border-radius: 8px; }
+    button { background: #22c55e; color: white; padding: 14px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; }
+    pre { background: #1e293b; padding: 16px; border-radius: 8px; overflow-x: auto; }
+  </style>
+</head>
+<body>
+  <h1>Scandinavian Firs – Offline Decryptor</h1>
+  <textarea id="encrypted" placeholder="Paste encrypted string from salesman.txt" rows="6"></textarea>
+  <input type="password" id="key" placeholder="Your SALES_ENCRYPT_KEY (base64)" />
+  <button onclick="decrypt()">Decrypt Order</button>
+  <pre id="output">Result appears here...</pre>
+
+  <script>
+    async function decrypt() {
+      const enc = document.getElementById("encrypted").value.trim();
+      const keyB64 = document.getElementById("key").value.trim();
+      if (!enc || !keyB64) return alert("Both fields required");
+
+      const data = Uint8Array.from(atob(enc), c => c.charCodeAt(0));
+      const [iv, tag, ct] = [data.slice(0,12), data.slice(12,28), data.slice(28)];
+
+      const key = await crypto.subtle.importKey("raw", Uint8Array.from(atob(keyB64), c => c.charCodeAt(0)), "AES-GCM", false, ["decrypt"]);
+      const plain = await crypto.subtle.decrypt({ name: "AES-GCM", iv, tag }, key, ct);
+      document.getElementById("output").textContent = JSON.stringify(JSON.parse(new TextDecoder().decode(plain)), null, 2);
+    }
+  </script>
+</body>
+</html>
