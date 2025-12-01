@@ -1,0 +1,20 @@
+gitignore
+# Dependencies
+node_modules/
+.next/
+.out/
+
+# Environment
+.env
+.env.local
+
+# Private data
+private/
+salesman.txt
+waitlist.txt
+
+# Vercel
+.vercel
+
+# Misc
+.DS_Store
