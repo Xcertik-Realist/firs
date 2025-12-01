@@ -18,8 +18,12 @@
     "lucide-react": "^0.446.0",
     "framer-motion": "^11.5.4",
     "date-fns": "^3.6.0",
-  "@contentlayer/source-files": "^0.3.4",
-"@contentlayer/next": "^0.3.4"
+    "gray-matter": "^4.0.3",
+    "remark": "^15.0.1",
+    "remark-rehype": "^10.1.0",
+    "rehype-stringify": "^10.0.0",
+    "unified": "^11.0.4",
+    "remark-gfm": "^4.0.0"
   },
   "devDependencies": {
     "typescript": "^5.5.4",
