@@ -18,8 +18,8 @@
     "lucide-react": "^0.446.0",
     "framer-motion": "^11.5.4",
     "date-fns": "^3.6.0",
-    "contentlayer": "^0.3.4",
-    "next-contentlayer": "^0.3.4"
+  "contentlayer": "^0.3.4",
+"next-contentlayer": "^0.3.4"
   },
   "devDependencies": {
     "typescript": "^5.5.4",
