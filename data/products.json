@@ -1,0 +1,63 @@
+[
+  {
+    "id": "nordmann",
+    "name": "Premium Nordmann Fir (Non-Drop)",
+    "image": "https://images.unsplash.com/photo-1606836577005-5a84c2e3e2e7?w=800&h=1000&fit=crop",
+    "variants": [
+      { "height": "4-5ft", "price": 49.95, "sku": "NF-45", "inStock": true },
+      { "height": "5-6ft", "price": 64.95, "sku": "NF-56", "inStock": true },
+      { "height": "6-7ft", "price": 79.95, "sku": "NF-67", "inStock": true },
+      { "height": "7-8ft", "price": 109.95, "sku": "NF-78", "inStock": true },
+      { "height": "8-9ft", "price": 139.95, "sku": "NF-89", "inStock": false }
+    ]
+  },
+  {
+    "id": "norway",
+    "name": "Traditional Norway Spruce",
+    "image": "https://images.unsplash.com/photo-1574785668396-53f1b4d5c9a8?w=800&h=1000&fit=crop",
+    "variants": [
+      { "height": "5-6ft", "price": 44.95, "sku": "NS-56", "inStock": true },
+      { "height": "6-7ft", "price": 59.95, "sku": "NS-67", "inStock": true },
+      { "height": "7-8ft", "price": 79.95, "sku": "NS-78", "inStock": true }
+    ]
+  },
+  {
+    "id": "fraser",
+    "name": "Fraser Fir – Citrus Scent",
+    "image": "https://images.unsplash.com/photo-1606836576998-85b5d963c172?w=800&h=1000&fit=crop",
+    "variants": [
+      { "height": "5-6ft", "price": 74.95, "sku": "FF-56", "inStock": true },
+      { "height": "6-7ft", "price": 94.95, "sku": "FF-67", "inStock": true },
+      { "height": "7-8ft", "price": 124.95, "sku": "FF-78", "inStock": false }
+    ]
+  },
+  {
+    "id": "premium-nordmann",
+    "name": "Extra Bushy Nordmann Fir",
+    "image": "https://images.pexels.com/photos/207215/pexels-photo-207215.jpeg?w=800&h=1000&fit=crop",
+    "variants": [
+      { "height": "6-7ft", "price": 109.95, "sku": "PN-67", "inStock": true },
+      { "height": "7-8ft", "price": 139.95, "sku": "PN-78", "inStock": true },
+      { "height": "8-9ft", "price": 179.95, "sku": "PN-89", "inStock": false }
+    ]
+  },
+  {
+    "id": "blue-spruce",
+    "name": "Colorado Blue Spruce",
+    "image": "https://images.unsplash.com/photo-1543589077-855d2f72523b?w=800&h=1000&fit=crop",
+    "variants": [
+      { "height": "5-6ft", "price": 89.95, "sku": "BS-56", "inStock": true },
+      { "height": "6-7ft", "price": 119.95, "sku": "BS-67", "inStock": true },
+      { "height": "7-8ft", "price": 149.95, "sku": "BS-78", "inStock": true }
+    ]
+  },
+  {
+    "id": "lodgepole",
+    "name": "Lodgepole Pine – Classic Scent",
+    "image": "https://images.pexels.com/photos/9705822/pexels-photo-9705822.jpeg?w=800&h=1000&fit=crop",
+    "variants": [
+      { "height": "6-7ft", "price": 69.95, "sku": "LP-67", "inStock": true },
+      { "height": "7-8ft", "price": 89.95, "sku": "LP-78", "inStock": true }
+    ]
+  }
+]
